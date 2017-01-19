@@ -1,0 +1,50 @@
+{
+  "name": "ng-broadcaster",
+  "version": "0.0.7",
+  "description": "Broadcasting and Emitting events in Angular 2",
+  "dependencies": {
+    "@angular/common": "2.4.3",
+    "@angular/core": "2.4.3",
+    "@angular/platform-browser-dynamic": "2.4.3",
+    "rxjs": "5.0.3",
+    "zone.js": "0.7.4",
+    "core-js": "2.4.1"
+  },
+  "devDependencies": {
+    "concurrently": "^3.1.0",
+    "lite-server": "^2.2.2",
+    "typescript": "^2.0.10",
+    "canonical-path": "0.0.2",
+    "http-server": "^0.9.0",
+    "tslint": "^4.0.2",
+    "lodash": "^4.16.4",
+    "jasmine-core": "~2.5.2",
+    "karma": "^1.3.0",
+    "karma-firefox-launcher": "^1.0.0",
+    "karma-cli": "^1.0.1",
+    "karma-jasmine": "^1.0.2",
+    "karma-jasmine-html-reporter": "^0.2.2",
+    "protractor": "4.0.11",
+    "webdriver-manager": "10.2.10",
+    "rimraf": "^2.5.4",
+    "systemjs": "0.19.41",
+    "@types/node": "^6.0.46",
+    "@types/jasmine": "^2.5.36",
+    "@types/selenium-webdriver": "^2.53.33",
+    "@types/core-js": "^0.9.35"
+  },
+  "main": "index.js",
+  "typings": "./index.d.ts",
+  "scripts": {
+    "buildwin": "rd /s /q lib && tsc -p src && tsc",
+    "build": "rm -rf lib && tsc -p src && tsc"
+  },
+  "keywords": [
+    "broadcasting",
+    "angular2",
+    "events",
+    "emit"
+  ],
+  "author": "Ran Buchnik <ranbuch@gmail.com>",
+  "license": "MIT"
+}

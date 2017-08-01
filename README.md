@@ -49,5 +49,3 @@ export class MainNavComponent implements OnInit {
   }
 }
 ```
-
-inspired by [laco's blog](https://lacolaco.net/post/event-broadcasting-in-angular-2/)

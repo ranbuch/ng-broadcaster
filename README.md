@@ -37,15 +37,21 @@ The listening component:
 ```
 import { BroadcasterService } from 'ng-broadcaster';
 import { User } from '../../services/user';
+import { Subscription } from 'rxjs';
 
-export class MainNavComponent implements OnInit {
+export class MainNavComponent implements OnInit, OnDestroy {
   private user: User;
+  private subscription: Susbcription;
   constructor(private broadcaster: BroadcasterService) {}
 
   ngOnInit() {
-    this.broadcaster.on<User>('onLogin').subscribe(
+    this.subscription = this.broadcaster.on<User>('onLogin').subscribe(
       user => this.user = user as User
     );
+  }
+
+  ngOnDestroy(): void {
+    this.subscription.unsubscribe();
   }
 }
 ```

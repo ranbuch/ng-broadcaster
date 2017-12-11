@@ -1,6 +1,6 @@
 {
   "name": "ng-broadcaster",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "Broadcasting and Emitting events in Angular 2",
   "dependencies": {
     "@angular/common": "^5.1.0",

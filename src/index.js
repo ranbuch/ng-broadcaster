@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var broadcaster_module_1 = require("./broadcaster.module");
 exports.BroadcasterModule = broadcaster_module_1.BroadcasterModule;
 var broadcaster_service_1 = require("./broadcaster.service");

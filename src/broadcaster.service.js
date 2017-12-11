@@ -8,11 +8,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var Subject_1 = require("rxjs/Subject");
 require("rxjs/add/operator/filter");
 require("rxjs/add/operator/map");
-var BroadcasterService = (function () {
+var BroadcasterService = /** @class */ (function () {
     function BroadcasterService() {
         this._eventBus = new Subject_1.Subject();
     }
@@ -24,11 +25,11 @@ var BroadcasterService = (function () {
             .filter(function (event) { return event.key === key; })
             .map(function (event) { return event.data; });
     };
+    BroadcasterService = __decorate([
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [])
+    ], BroadcasterService);
     return BroadcasterService;
 }());
-BroadcasterService = __decorate([
-    core_1.Injectable(),
-    __metadata("design:paramtypes", [])
-], BroadcasterService);
 exports.BroadcasterService = BroadcasterService;
 //# sourceMappingURL=broadcaster.service.js.map

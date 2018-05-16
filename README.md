@@ -1,4 +1,4 @@
-# ng-broadcaster - Broadcasting and Emitting events in Angular 2
+# ng-broadcaster - Broadcasting and Emitting events in Angular
 
 First step - install package:
 ```

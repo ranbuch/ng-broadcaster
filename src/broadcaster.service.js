@@ -10,12 +10,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var Subject_1 = require("rxjs/Subject");
+var rxjs_1 = require("rxjs");
 require("rxjs/add/operator/filter");
 require("rxjs/add/operator/map");
 var BroadcasterService = /** @class */ (function () {
     function BroadcasterService() {
-        this._eventBus = new Subject_1.Subject();
+        this._eventBus = new rxjs_1.Subject();
     }
     BroadcasterService.prototype.broadcast = function (key, data) {
         this._eventBus.next({ key: key, data: data });
